@@ -1,0 +1,30 @@
+﻿@model MP_MulheresProgramando.Models.Programadora
+
+
+<h3>Excluir</h3>
+
+<h5 class="alert">Tem certeza de que deseja excluir esta Programadora?</h5>
+<div>
+    <h4>Programadora</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NomeDev)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NomeDev)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Linguagens)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Linguagens.Nome)
+        </dd class>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Excluir" class="btn btn-danger" /> |
+        <a asp-action="Index"><strong><< Voltar</strong></a>
+    </form>
+</div>

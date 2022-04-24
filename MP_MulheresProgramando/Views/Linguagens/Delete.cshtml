@@ -1,0 +1,24 @@
+﻿@model MP_MulheresProgramando.Models.Linguagem
+
+
+<h3>Excluir</h3>
+
+<h5 class="alert">Tem certeza de que deseja excluir esta Linguagem?</h5>
+<div>
+    <h4>Linguagem</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Excluir" class="btn btn-danger" /> |
+        <a asp-action="Index"><strong><< Voltar</strong></a>
+    </form>
+</div>

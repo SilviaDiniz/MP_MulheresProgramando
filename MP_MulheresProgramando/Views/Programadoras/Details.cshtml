@@ -1,0 +1,27 @@
+﻿@model MP_MulheresProgramando.Models.Programadora
+
+
+<h3>Detalhes</h3>
+
+<div>
+    <h4>Programadora</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NomeDev)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NomeDev)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Linguagens)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Linguagens.Nome)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Editar</a> |
+    <a asp-action="Index"><strong><< Voltar</strong></a>
+</div>
