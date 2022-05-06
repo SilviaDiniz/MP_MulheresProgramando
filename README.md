@@ -14,4 +14,6 @@ experiência para atender as exigências do mercado de trabalho.
 ## Tecnologias e Software Utlilizado para o desenvolvimento do projeto
 * ASP.NET MVC
 * Pacotes do NuGet
+* Entity Framework Core
+* SQL Server
 * Visual Studio
